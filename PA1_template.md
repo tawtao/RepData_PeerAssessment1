@@ -22,7 +22,7 @@ total <- aggregate(steps ~ date, act, sum)
 hist(total$steps, main='Histogram of Total steps taken each day')
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 2. Calculate and report mean and median total number of steps taken per day
 
@@ -50,7 +50,7 @@ plot(act$interval, act$steps,pch=20,col="lightgray")
 abline(h=mean(act$steps,na.rm=TRUE), col="black")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 2. The 5-minute interval that contains the maximum number of steps is
 
@@ -104,7 +104,7 @@ total.full <- aggregate(steps ~ date, full, sum)
 hist(total.full$steps, main='Histogram of Total steps taken each day')
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 * Calculate and report mean and median total number of steps taken per day
 
@@ -153,4 +153,4 @@ ggplot(act, aes(interval, steps)) +
 ## Warning: Removed 1 rows containing missing values (geom_path).
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
